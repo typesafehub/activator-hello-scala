@@ -7,8 +7,8 @@
     <h2> Explore the Code</h2>
 
     <p>You've just created a Scala application!  This is a basic "Hello, World"
-       application.   Let's look at the <a href="#code/app/Hello.scala"
-      class="shortcut">app/Hello.scala</a> file.</p>
+       application.   Let's look at the <a href="#code/src/main/scala/Hello.scala"
+      class="shortcut">src/main/scala/Hello.scala</a> file.</p>
 
     <p>This file consists of a single object called <code>Hello</code>.  This
        object defines a <code>main</code> method, which denotes that it can be run as a
@@ -45,7 +45,7 @@
 
     <p>Let's make changes to the <code>Hello</code> application and see what happens.</p>
 
-    <p>First, go back to <a href="#code/app/Hello.scala"
+    <p>First, go back to <a href="#code/src/main/scala/Hello.scala"
        class="shortcut">Hello.scala</a> and change 
        <pre><code>println("Hello, world!")</code></pre> 
        to 
@@ -58,7 +58,7 @@
 <div>
     <h2>Defining Values</h2>
 
-    <p>Let's go back to <a href="#code/app/Hello.scala" class="shortcut">Hello.scala</a>
+    <p>Let's go back to <a href="#code/src/main/scala/Hello.scala" class="shortcut">Hello.scala</a>
        and start mucking with the code.</p>
 
     <p>First, we'd like to have our application also say goodbye.   Let's add the
@@ -72,7 +72,7 @@
 Goodbye, Activator!</pre></code>
 
     <p> Now, we'd like to re-use the name for the greeting and farewell text.  To do so, we're going to use a <code>def</code> in Scala.
-       A <code>def</code> denotes a method, or block of re-usable code.  Let's modify our <a href="#code/app/Hello.scala" class="shortcut">Hello</a> app as follows:
+       A <code>def</code> denotes a method, or block of re-usable code.  Let's modify our <a href="#code/src/main/scala/Hello.scala" class="shortcut">Hello</a> src/main/scala as follows:
     </p>
 <pre><code>
 object Hello {
@@ -95,7 +95,7 @@ object Hello {
 
     <p>No app, regardless of how simple, is complete without a modicum of testing!   Let's modify our existing tests to account for the new "<code>who</code>" method we've added.</p>
 
-     <p>Navigate to <a href="#code/test/HelloSpec.scala" class="shortcut">HelloSpec.scala</a> to see our existing test suite.  You should see the following:</p>
+     <p>Navigate to <a href="#code/src/test/scala/HelloSpec.scala" class="shortcut">HelloSpec.scala</a> to see our existing test suite.  You should see the following:</p>
      <pre><code>
 import org.scalatest._
 import org.scalatest.matchers.ShouldMatchers
@@ -126,7 +126,7 @@ class HelloSpec extends FlatSpec with ShouldMatchers {
 
     <p>The new test should show up on the list of tests with the name "Hello should know who to greet", and it should be passing.</p>
 
-    <p>If we take a closer look in the <a href="#code/test/HelloSpec.scala" class="shortcut">code</a>, we're accessing the member "who" on the "Hello" object using the "." notation.  In Scala, we can reference any member on an 
+    <p>If we take a closer look in the <a href="#code/src/test/scala/HelloSpec.scala" class="shortcut">code</a>, we're accessing the member "who" on the "Hello" object using the "." notation.  In Scala, we can reference any member on an 
        object using that object's name, the ".", and the name of the member.</p>
 
     <p>Now that we've define a single test, it's time to dig further into the Scala language.</p>
@@ -135,7 +135,7 @@ class HelloSpec extends FlatSpec with ShouldMatchers {
 <div>
     <h2>Next Steps</h2>
 
-    <p>You're now ready to really start learning how to write application in Scala!   While this tutorial presents the absolute basics of creating applications in Scala,
+    <p>You're now ready to really start learning how to write application in Scala!   While this tutorial presents the absolute basics of creating application in Scala,
        we don't cover the details of the language.  As you explore further tutorials, we recommend toying with code inside of Activator.  You may continue using the browser, 
        or swap to a command line experience via the "activator" script in the hello-scala directory.</p>
     <p>If you're interested in learning more about Scala, please look through the following links/tutorials/books:</p>
