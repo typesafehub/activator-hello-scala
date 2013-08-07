@@ -95,7 +95,7 @@ object Hello {
 
     <p>No app, regardless of how simple, is complete without a modicum of testing!   Let's modify our existing tests to account for the new "<code>who</code>" method we've added.</p>
 
-     <p>Navigate to <a href="#code/test/HelloSpec.scala" class="shortcut">HelloSpec.scala</a> to see our existing test suite.  You should see the following:</p>
+     <p>Navigate to <a href="#code/src/test/scala/HelloSpec.scala" class="shortcut">HelloSpec.scala</a> to see our existing test suite.  You should see the following:</p>
      <pre><code>
 import org.scalatest._
 import org.scalatest.matchers.ShouldMatchers
@@ -126,7 +126,7 @@ class HelloSpec extends FlatSpec with ShouldMatchers {
 
     <p>The new test should show up on the list of tests with the name "Hello should know who to greet", and it should be passing.</p>
 
-    <p>If we take a closer look in the <a href="#code/test/HelloSpec.scala" class="shortcut">code</a>, we're accessing the member "who" on the "Hello" object using the "." notation.  In Scala, we can reference any member on an 
+    <p>If we take a closer look in the <a href="#code/src/test/scala/HelloSpec.scala" class="shortcut">code</a>, we're accessing the member "who" on the "Hello" object using the "." notation.  In Scala, we can reference any member on an 
        object using that object's name, the ".", and the name of the member.</p>
 
     <p>Now that we've define a single test, it's time to dig further into the Scala language.</p>
