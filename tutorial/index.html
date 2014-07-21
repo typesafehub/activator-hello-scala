@@ -22,7 +22,7 @@
        of string values (or "<code>Array[String]</code>") and passed into the "<code>main</code>" method.</p>
     <p>Following the argument list is the return type of the method.  For main, this is "<code>Unit</code>" which
        denotes "uninteresting" return type.   It is similar to the "void" type of Java/C/C++ in that we aren't
-       interesting in calling the "<code>main</code>" method for a return value.
+       interested in calling the "<code>main</code>" method for a return value.
     <p>Following the return type is an "<code>=</code>" character and then the method implementation.
        For the <code>Hello.main</code> method, the implementation is the following block of code:
     </p>
@@ -84,7 +84,7 @@ object Hello {
   }
 }
 </code></pre>
-    <p>This new code creates a <code>val</code> called "<code>who</code>" which is used in the greeting messages.  After defining the value, everytime the "<code>who</code>" name is referenced, the value we've stored will be used.</p>
+    <p>This new code creates a <code>val</code> called "<code>who</code>" which is used in the greeting messages.  After defining the value, every time the "<code>who</code>" name is referenced, the value we've stored will be used.</p>
     <p>The <code>+</code> operator is used to join the necessary strings together before passing to the <code>println</code> method.  If we swap back to the <a href="#run" class="shortcut">Run</a> tab, we'll see that the greeting and goodbye messages remain unchanged.
     </p>
     <p>In Scala, a "val" represents a re-usable piece of data or computation that we do not want to re-run.   Once set, a val points to the same information forever.  In
@@ -93,7 +93,7 @@ object Hello {
 <div>
     <h2>Testing Applications</h2>
 
-    <p>No app, regardless of how simple, is complete without a modicum of testing!   Let's modify our existing tests to account for the new "<code>who</code>" method we've added.</p>
+    <p>No app, no matter how simple, is complete without a modicum of testing!   Let's modify our existing tests to account for the new "<code>who</code>" method we've added.</p>
 
      <p>Navigate to <a href="#code/src/test/scala/HelloSpec.scala" class="shortcut">HelloSpec.scala</a> to see our existing test suite.  You should see the following:</p>
      <pre><code>
