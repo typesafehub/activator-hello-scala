@@ -15,7 +15,7 @@
 /RUNNING_PID
 /logs
 /project/plugins/project
-/project/project/
+/project/project/target
 /project/typesafe.properties
 project/boot
 target/
